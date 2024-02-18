@@ -1,0 +1,143 @@
+মাইলস্টোন-০৫ এর টেনটেটিভ আউটলাইন
+ফেব্রুয়ারী ০৯: মডিউল-২৪: Tour of DOM (Document Object Model)
+ফেব্রুয়ারী ১০: মডিউল-২৫: Event, addEventListener, Event bubble
+ফেব্রুয়ারী ১১: নো মডিউল(কন্সেপচুয়াল সেশন)
+ফেব্রুয়ারী ১২: মডিউল-২৬: Be Dom Doctor with Geometry Genius
+ফেব্রুয়ারী ১৩: মডিউল-২৭: Unleash Your DOM Journey with Alpha-Clash - I
+ফেব্রুয়ারী ১৪: মডিউল-২৮: Unleash Your DOM Journey with Alpha-Clash - II
+ফেব্রুয়ারী ১৫: মডিউল-২৮.৫: DOM manipulation checklist and practice day(কন্সেপচুয়াল সেশন)
+ফেব্রুয়ারী ১৬: নো মডিউল
+ফেব্রুয়ারী ১৭: মডিউল-২৯: এসাইনমেন্ট-০৫
+৬০ মার্ক্স্ এর ডেডলাইন ১৯ তারিখ রাত ১১.৫৯ পর্যন্ত
+৫০ মার্ক্স্ এর ডেডলাইন ২২ তারিখ রাত ০৫.৫৯ পর্যন্ত
+ফেব্রুয়ারী ১৮: নো মডিউল
+ফেব্রুয়ারী ১৯: মডিউল-২৯.৫: বোনাস ভিডিও
+ফেব্রুয়ারী ২০: নো মডিউল
+ফেব্রুয়ারী ২১: মাইলস্টোন-০৬(API)
+
+
+<div class="carousel w-full">
+                <div id="slide1" class="w-full bg-[url(./images/banner.png)] h-[60vh] lg:py-20 bg-contain lg:bg-cover bg-center bg-no-repeat">
+                    <!-- <img src="./images/1.png" class="w-full" /> -->
+                    <div class="relative">
+                        <a href="#slide3" class="absolute bottom-10 lg:-bottom-7 left-[120px] lg:left-4 lg:text-2xl text-white bg-black py-1 px-3 rounded-full">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                        <a href="#slide2" class=" absolute bottom-10 lg:-bottom-7 left-[164px] lg:left-16 lg:text-2xl text-white bg-black py-1 px-3 rounded-full">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+
+
+
+<!-- PARIBAHAN DETAILS AND SEAT SALE -->
+    <section>
+        <div class="bg-[#F7F8F8]">
+            <!-- TOP PART -->
+            <div class="container mx-auto lg:px-16 px-4 text-center">
+                <!-- TITLE -->
+                <div>
+                    <h2>P.H Paribahan</h2>
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+                <!-- FORM PART -->
+                <div>
+                    <!-- left -->
+                    <form action=""></form>
+                    <!-- right -->
+                    <div></div>
+                </div>
+            </div>
+            <!-- BOTTOM PART -->
+            <div class="container mx-auto lg:px-16 px-4 text-center bg-white flex">
+                <!-- left -->
+                <div class="w-3/5">
+                    <div>
+                        <h2 class="text-left">Select Your Seat</h2>
+                        <div class="flex justify-between m-3">
+                            <span class="flex"><img src="./images/seat-gray.png" alt=""> Available</span>
+                            <span class="flex"><img src="./images/seat-green-filled.png" alt=""> Selected</span>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="grid grid-cols-5">
+                            <li class="bg-[#fff] px-0"></li>
+                            <li class="bg-[#fff] px-0"></li>
+                            <li class="bg-[#fff] px-0"></li>
+                            <li class="bg-[#fff] px-0"></li>
+                            <li class="m-auto px-11"><img src="./images/seat-gray.png" alt=""></li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left">A</li>
+                            <li>A1</li>
+                            <li class="mr-8">A2</li>
+                            <li>A3</li>
+                            <li>A4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left">B</li>
+                            <li>B1</li>
+                            <li class="mr-8">B2</li>
+                            <li>B3</li>
+                            <li>B4</li>
+                            <LI class="bg-[#fff] px-0 mx-0 text-left">C</LI>
+                            <li>C1</li>
+                            <li class="mr-8">C2</li>
+                            <li>C3</li>
+                            <li>C4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left">D</li>
+                            <li>D1</li>
+                            <li class="mr-8">D2</li>
+                            <li>D3</li>
+                            <li>D4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left">E</li>
+                            <li>E1</li>
+                            <li class="mr-8">E2</li>
+                            <li>E3</li>
+                            <li>E4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left">F</li>
+                            <li>F1</li>
+                            <li class="mr-8">F2</li>
+                            <li>F3</li>
+                            <li>F4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left">G</li>
+                            <li>G1</li>
+                            <li class="mr-8">G2</li>
+                            <li>G3</li>
+                            <li>G4</li>
+                            <li class="bg-[#fff] px-0 mx-0" text-left>H</li>
+                            <li>H1</li>
+                            <li class="mr-8">H2</li>
+                            <li>H3</li>
+                            <li>H4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left text-left">I</li>
+                            <li>I1</li>
+                            <li class="mr-8">I2</li>
+                            <li>I3</li>
+                            <li>I4</li>
+                            <li class="bg-[#fff] px-0 mx-0 text-left text-left">J</li>
+                            <li>J1</li>
+                            <li class="mr-8">J2</li>
+                            <li>J3</li>
+                            <li>J4</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="w-2/3">
+                    <h2>Select Your Seat</h2>
+                    <div></div>
+                    <div>
+                        <form action=""></form>
+                    </div>
+                    <div>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    এবারে ডান পাশে টেবিল নিতে পারো, যেখানে তিন টা রো থাকবে। টিবডি তে আইডি সেট করো।
+
+আর নিচের ফর্ম এর ইনপুট গুলো এবং বাটুন। সব ডেইজি ইউ আই তে পেয়ে যাবে।            

@@ -1,0 +1,29 @@
+/*FONT links start by DWN*/
+
+@font-face{
+	font-family: Raleway-VariableFont_wght;
+	src: url(./fonts/Raleway-VariableFont_wght.ttf);
+} 
+
+body{
+    /* font-family: Raleway-VariableFont_wght; */
+    /* font-size: 90px; */
+}
+a{
+    /* font-size: 10px; */
+}
+.seat-serial{
+    min-height: 100%;
+}
+.seat-serial div{
+    /* min-height: 8%; */
+    /* background-color: #F7F8F8; */
+    margin: 12px 0;
+    padding: 12px 0;
+}
+.seat-allocation li{
+    background-color: #F7F8F8;
+    margin: 12px;
+    padding: 12px;
+    border-radius: 12px;
+}

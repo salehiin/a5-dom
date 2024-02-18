@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Five</title>
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- DAISYUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="">
+    <header>
+        <nav class="py-4">
+            <div class="container mx-auto lg:px-16 px-0">
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Destination</a></li>
+                                <li><a>Search</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost font-[Raleway-VariableFont_wght] font-extrabold text-2xl lg:text-4xl">P-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="btn min-h-10 px-3 lg:px-4 lg:min-h-12 h-10 lg:h-12">Bus <img src="./images/bus-icon.png" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- BANNER SECTION -->
+        <div class="container mx-auto lg:px-16 px-4">
+            <div class="hero min-h-screen"
+                style="background-image: url(./images/banner.png);">
+                <div class=""></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="w-full lg:w-1/4 text-white lg:p-8 p-4 bg-[#131318] rounded-2xl lg:translate-x-[70px] translate-x-0 lg:-translate-y-12 translate-y-0">
+                    <h3 class="text-lg lg:text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">
+                        Encounter field heroes, embracing their courage, resilience, and dedication to making a positive impact on society. 
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/4 text-white lg:p-8 p-4 bg-[#131318] rounded-2xl lg:translate-x-[145px] translate-x-0 lg:-translate-y-12 translate-y-0">
+                    <h3 class="text-lg lg:text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">
+                        Encounter field heroes, embracing their courage, resilience, and dedication to making a positive impact on society. 
+                    </p>
+                </div>
+                <div class="w-full lg:w-1/4 text-white lg:p-8 p-4 bg-[#131318] rounded-2xl lg:translate-x-[220px] translate-x-0 lg:-translate-y-12 translate-y-0">
+                    <h3 class="text-lg lg:text-2xl font-bold pb-4">Meet all the heroes from the field</h3>
+                    <p class="text-[#FFFFFF99] text-sm lg:text-base font-medium">
+                        Encounter field heroes, embracing their courage, resilience, and dedication to making a positive impact on society. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- OFFERS SECTION -->
+    <section>
+        <div class="container mx-auto lg:px-16 px-4 text-center">
+            <h1>Best offers for you</h1>
+            <div class="flex justify-between my-5">
+                <!-- LEFT CARD -->
+                <div class="card card-side bg-[#FFBF0F] w-[49.25%] p-8">
+                    <div class="border-r-[1px] border-[dotted]">
+                        <h3>15% OFF</h3>
+                        <p>on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="">NEW15</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+                <!-- RIGHT CARD -->
+                <div class="card card-side bg-[#F78C9C] w-[49.25%] p-8">
+                    <div class="border-r-[1px] border-[dotted]">
+                        <h3>20% OFF</h3>
+                        <p>on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="">Couple 20</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-outline btn-success">Best offers for you</button>
+        </div>
+    </section>
+    <!-- OFFERS SECTION -->
+    <!-- PARIBAHAN DETAILS AND SEAT SALE -->
+    <section>
+        <div class="bg-[#F7F8F8]">
+            <!-- TOP PART -->
+            <div class="container mx-auto lg:px-16 px-4 text-center">
+                <!-- TITLE -->
+                <div>
+                    <h2>P.H Paribahan</h2>
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                </div>
+                <!-- JOURNEY DETAILS PART -->
+                <div>
+                    <div class="card lg:card-side bg-base-100 shadow-xl">
+                        <div class="card-body w-4/5">
+                            <div>
+                                <img src="./images/bus-logo.png" alt="">
+                                <div>
+                                    <h2 class="card-title">New album is released!</h2>
+                                    <p>Click the button to listen on Spotiwhy app.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <img src="./images/seat-green.png" alt="">
+                                <p><span>40</span>Seats left</p>
+                            </div>
+                            <h2 class="card-title">New album is released!</h2>
+                            <p>Click the button to listen on Spotiwhy app.</p>
+                            
+                        </div>
+                        <div class="card-body w-1/5">
+                            <img src="./images/fare.png" alt="" class="w-6 m-auto">
+                            <h4>550 Taka</h4>
+                            <p>Per Seat</p>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                Shoes!
+                                <div class="badge badge-secondary">NEW</div>
+                            </h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <div class="badge badge-outline">Fashion</div>
+                                <div class="badge badge-outline">Products</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- BOTTOM PART -->
+            <div class="container mx-auto lg:px-16 px-4 text-center bg-white flex">
+                <!-- left -->
+                <div class="w-3/5">
+                    <div>
+                        <h2 class="text-left">Select Your Seat</h2>
+                        <div class="flex justify-between m-3">
+                            <span class="flex"><img src="./images/seat-gray.png" alt=""> Available</span>
+                            <span class="flex"><img src="./images/seat-green-filled.png" alt=""> Selected</span>
+                        </div>
+                    </div>
+                    <div></div>
+                    <div class="m-auto px-11"><img src="./images/seat-gray.png" alt=""></div>
+                    <div class="flex">
+                        <div class="seat-serial flex flex-col w-1/5">
+                            <div>A</div>
+                            <div>B</div>
+                            <div>C</div>
+                            <div>D</div>
+                            <div>E</div>
+                            <div>F</div>
+                            <div>G</div>
+                            <div>H</div>
+                            <div>I</div>
+                            <div>J</div>
+                        </div>
+                        <ul class="seat-allocation grid grid-cols-4 w-4/5">
+                            <li>A1</li>
+                            <li class="mr-8">A2</li>
+                            <li>A3</li>
+                            <li>A4</li>
+                            
+                            <li>B1</li>
+                            <li class="mr-8">B2</li>
+                            <li>B3</li>
+                            <li>B4</li>
+                            
+                            <li>C1</li>
+                            <li class="mr-8">C2</li>
+                            <li>C3</li>
+                            <li>C4</li>
+                            
+                            <li>D1</li>
+                            <li class="mr-8">D2</li>
+                            <li>D3</li>
+                            <li>D4</li>
+                            
+                            <li>E1</li>
+                            <li class="mr-8">E2</li>
+                            <li>E3</li>
+                            <li>E4</li>
+                            
+                            <li>F1</li>
+                            <li class="mr-8">F2</li>
+                            <li>F3</li>
+                            <li>F4</li>
+                            
+                            <li>G1</li>
+                            <li class="mr-8">G2</li>
+                            <li>G3</li>
+                            <li>G4</li>
+                            
+                            <li>H1</li>
+                            <li class="mr-8">H2</li>
+                            <li>H3</li>
+                            <li>H4</li>
+                            
+                            <li>I1</li>
+                            <li class="mr-8">I2</li>
+                            <li>I3</li>
+                            <li>I4</li>
+                            
+                            <li>J1</li>
+                            <li class="mr-8">J2</li>
+                            <li>J3</li>
+                            <li>J4</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- right -->
+                <div class="w-2/5">
+                    <h2>Select Your Seat</h2>
+                    <div class="my-8">
+                        <!-- TABLE START -->
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                                <!-- head -->
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Seat <span>0</span></th>
+                                        <th>Class</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- row 1 -->
+                                    <tr>                                        
+                                        <td>C2</td>
+                                        <td>Economy</td>
+                                        <td>550</td>
+                                    </tr>
+                                    <!-- row 2 -->
+                                    <tr>                                        
+                                        <td>C2</td>
+                                        <td>Economy</td>
+                                        <td>550</td>
+                                    </tr>
+                                    <!-- row 3 -->                                   
+                                </tbody>
+                            </table>
+                            <label class="input input-bordered flex items-center gap-2">
+                                <input type="text" class="grow" placeholder="Search" />
+                                <span class="badge badge-info">Optional</span>
+                            </label>
+                            <div class="flex justify-between">
+                                <p>Grand Total</p>
+                                <p>BDT<span>0</span></p>
+                            </div>
+                        </div>
+                        <!-- TABLE END -->
+                    </div>
+                    <div>
+                        <form action="">
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text">What is your name?</span>
+                                </div>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            </label>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text">What is your name?</span>
+                                </div>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            </label>
+                            <label class="form-control w-full max-w-xs">
+                                <div class="label">
+                                    <span class="label-text">What is your name?</span>
+                                </div>
+                                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                            </label>
+                            <button class="btn btn-block">block</button>
+                        </form>
+                    </div>
+                    <div>
+                        <span>Terms and Conditions</span>
+                        <span>Cancellation Policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+       
+    </main>       
+    
+    <script src="./utility.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
