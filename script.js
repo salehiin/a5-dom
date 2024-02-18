@@ -1,10 +1,12 @@
 const allSeat = document.getElementsByTagName("li");
 let count = 0;
+let remain = 40;
 
 // console.log(allSeat);
 for(const seat of allSeat){
     seat.addEventListener("click", function(e){
         count += 1;
+        remain -= 1;
 
         const seatNo = e.target.innerText;
         // const seatNo = e.target.parentNode.childNodes[1].innerText;
@@ -36,6 +38,7 @@ for(const seat of allSeat){
 
         setInnerText("total-fare", sum);
         setInnerText("seat-count", count);
+        setInnerText("seat-remain", remain);
         
     });
 }
