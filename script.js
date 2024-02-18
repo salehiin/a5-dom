@@ -10,8 +10,8 @@ for(const seat of allSeat){
         // const seatNo = e.target.parentNode.childNodes[1].innerText;
         // console.log(e.target);
         // const classNme = e.target.parentNode.childNodes[3].innerText;
-        console.log(e.target.parentNode.parentNode.parentNode.parentNode);
-        // const seatFare = e.target.parentNode.childNodes[5].innerText;
+        // console.log(e.target.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[7].childNodes[1].childNodes[3].childNodes[3].childNodes[0].innerText);
+        const seatFare = e.target.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[3].childNodes[7].childNodes[1].childNodes[3].childNodes[3].childNodes[0].innerText;
 
         const selectedContainer = document.getElementById("selected-seat-container");
 
@@ -19,12 +19,14 @@ for(const seat of allSeat){
 
         const td = document.createElement("td");
         td.innerText = seatNo;
-        // const td2 = document.createElement("td");
-        // td.innerText = className;
-        // const td3 = document.createElement("td");
-        // td.innerText = seatFare;
+        const td2 = document.createElement("td");
+        td2.innerText = "Economy";
+        const td3 = document.createElement("td");
+        td3.innerText = seatFare;
 
         tr.appendChild(td)
+        tr.appendChild(td2)
+        tr.appendChild(td3)
         selectedContainer.appendChild(tr);
 
         setInnerText("seat-count", count);
