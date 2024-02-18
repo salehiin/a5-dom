@@ -5,6 +5,10 @@ let remain = 40;
 // console.log(allSeat);
 for(const seat of allSeat){
     seat.addEventListener("click", function(e){
+        if(count > 3){
+            alert("cant purchase more than 4 tickets")
+            return;
+        }
         count += 1;
         remain -= 1;
 
@@ -26,23 +30,93 @@ for(const seat of allSeat){
         const td3 = document.createElement("td");
         td3.innerText = seatFare;
 
+        e.target.style.backgroundColor="#1DD100";
+        // e.target.setAttribute=this.ariaDisabled
+
         tr.appendChild(td)
         tr.appendChild(td2)
         tr.appendChild(td3)
+
+
+       
+
         selectedContainer.appendChild(tr);
+        
 
-        const totalFare = document.getElementById("total-fare").innerText;
+        // const totalFare = document.getElementById("total-fare").innerText;
 
-        const convertedTotalFare = parseInt(totalFare);
-        const sum = convertedTotalFare + parseInt(seatFare);
+        // const convertedTotalFare = parseInt(totalFare);
+        // const sum = convertedTotalFare + parseInt(seatFare);
 
-        setInnerText("total-fare", sum);
+        // const grandTotal = document.getElementById("grand-total").innerText;
+
+        // const convertedGrandTotal = parseInt(grandTotal);
+        // const sum2 = convertedGrandTotal + parseInt(seatFare)
+
+        totalFare("total-fare", parseInt(seatFare));
+        grandTotalFare("grand-total", parseInt(seatFare));
+
+        
+        
+        // setInnerText("grand-total", sum2);
+        // setInnerText("total-fare", sum);
+
+        
         setInnerText("seat-count", count);
+
+        
+
         setInnerText("seat-remain", remain);
+
+       
         
     });
 }
 
+// function grandTotalFare(id, value){
+//     const totalFare = document.getElementById(id).innerText;
+
+//         const convertedTotalFare = parseInt(totalFare);
+//         const sum = convertedTotalFare + parseInt(value);
+//         setInnerText("grand-total", sum);
+// }
+
+
+
+function totalFare(id, value){
+    const totalFare = document.getElementById(id).innerText;
+
+        const convertedTotalFare = parseInt(totalFare);
+        const sum = convertedTotalFare + parseInt(value);
+        setInnerText("total-fare", sum);
+}
+
 function setInnerText(id, value){
     document.getElementById(id).innerText = value;
+}
+
+
+
+
+
+function grandTotalFare(category){
+    const totalFare = document.getElementById("total-fare").innerText;
+        const convertedTotalFare = parseInt(totalFare);
+        
+        // if(category=="NEW15"){
+        //     setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.15);
+        // }else if(category=="Couple 20"){
+        //     setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.20);
+        // }else{
+        //     setInnerText("grand-total", convertedTotalFare);
+        // }
+
+        if(document.getElementById("coupon").value =="NEW15"){
+            setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.15);
+        }else if(document.getElementById("coupon").value =="Couple 20"){
+            setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.20);
+        }else{
+            setInnerText("grand-total", convertedTotalFare);
+        }
+        
 }
