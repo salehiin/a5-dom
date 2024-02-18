@@ -29,6 +29,12 @@ for(const seat of allSeat){
         tr.appendChild(td3)
         selectedContainer.appendChild(tr);
 
+        const totalFare = document.getElementById("total-fare").innerText;
+
+        const convertedTotalFare = parseInt(totalFare);
+        const sum = convertedTotalFare + parseInt(seatFare);
+
+        setInnerText("total-fare", sum);
         setInnerText("seat-count", count);
         
     });
