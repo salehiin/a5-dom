@@ -131,7 +131,7 @@
     <section class="py-4">
         <div class="bg-[#F7F8F8] rounded-t-[48px]">
             <!-- TOP PART -->
-            <div class="container mx-auto lg:p-16 p-4 text-center">
+            <div class="container mx-auto text-center">
                 <!-- TITLE -->
                 <div class="p-0 lg:px-56">
                     <h2 class="text-4xl font-bold">P.H Paribahan</h2>
@@ -180,20 +180,19 @@
                 </div>
             </div>
             <!-- BOTTOM PART -->
-            <div class="container mx-auto lg:px-16 px-4 text-center bg-white flex">
+            <div class="container mx-auto p-4 text-center bg-white rounded-t-2xl mt-8 flex ">
                 <!-- left -->
-                <div class="w-full lg:w-3/5">
+                <div class="w-full lg:w-3/5 p-6">
                     <div>
-                        <h2 class="text-left">Select Your Seat</h2>
-                        <div class="flex justify-between m-3">
-                            <span class="flex"><img src="./images/seat-gray.png" alt=""> Available</span>
-                            <span class="flex"><img src="./images/seat-green-filled.png" alt=""> Selected</span>
+                        <h2 class="text-left font-bold">Select Your Seat</h2>
+                        <div class="flex justify-between m-3 py-3 border-y-[1px]">
+                            <span class="flex gap-2"><img src="./images/seat-gray.png" alt=""> Available</span>
+                            <span class="flex gap-2"><img src="./images/seat-green-filled.png" alt=""> Selected</span>
                         </div>
                     </div>
-                    <div></div>
-                    <div class="m-auto px-11"><img src="./images/seat-gray.png" alt=""></div>
+                    <div class="bg-[#eaebec] rounded-lg w-[114px] ml-auto mr-[14px] p-[10px]"><img class="m-auto" src="./images/seat-gray.png" alt=""></div>
                     <div class="flex">
-                        <div class="seat-serial flex flex-col w-full lg:w-1/5">
+                        <div class="seat-serial flex flex-col items-start w-full lg:w-1/5">
                             <div>A</div>
                             <div>B</div>
                             <div>C</div>
@@ -259,50 +258,38 @@
                     </div>
                 </div>
                 <!-- right -->
-                <div class="w-full lg:w-2/5">
-                    <h2>Select Your Seat</h2>
-                    <div class="my-8">
+                <div class="w-full lg:w-2/5 p-6">
+                    <h2 class="text-left font-bold">Select Your Seat</h2>
+                    <div class="my-8 bg-[#f7f8f8] p-4 rounded-lg">
                         <!-- TABLE START -->
                         <div class="overflow-x-auto">
-                            <table class="table">
+                            <table class="table line">
                                 <!-- head -->
-                                <thead>
-                                    <tr>
-                                        <th></th>
+                                <thead class="leading-[60px]">
+                                    <tr class="text-black">
+                                        
                                         <th>Seat <span id="seat-count">0</span></th>
                                         <th>Class</th>
                                         <th>Price</th>
                                     </tr>
                                 </thead>
-                                <tbody id="selected-seat-container">
-                                    <!-- row 1 -->
-                                    <!-- <tr >                                        
-                                        <td>C2</td>
-                                        <td>Economy</td>
-                                        <td>550</td>
-                                    </tr> -->
-                                    <!-- row 2 -->
-                                    <!-- <tr>                                        
-                                        <td>C2</td>
-                                        <td>Economy</td>
-                                        <td>550</td>
-                                    </tr> -->
-                                    <!-- row 3 -->                                   
+                                <tbody id="selected-seat-container" class="leading-[60px]">
+                                                                     
                                 </tbody>
                             </table>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between text-black font-bold">
                                 <p>Total Price</p>
                                 <p>BDT<span id="total-fare">0</span></p>
                             </div>
-                            <div class="flex justify-between hidden">
+                            <div class="flex justify-between text-black font-bold hidden">
                                 <p>Discount Price</p>
                                 <p>BDT<span id="discountPrice">0</span></p>
                             </div>
-                            <label class="input input-bordered flex items-center gap-2">
-                                <input id="coupon" type="text" class="grow" placeholder="Search" />
-                                <span id="apply-btn" class="badge badge-info">Optional</span>
+                            <label class="input input-bordered flex items-center gap-2 my-4">
+                                <input id="coupon" type="text" class="grow" placeholder="Have any coupon?" />
+                                <span id="apply-btn" class="text-white bg-[#1dd100] rounded-lg px-4 py-2">Apply</span>
                             </label>
-                            <div class="flex justify-between">
+                            <div class="flex justify-between text-black font-bold">
                                 <p>Grand Total</p>
                                 <p>BDT<span id="grand-total">0</span></p>
                             </div>
@@ -311,30 +298,30 @@
                     </div>
                     <div>
                         <form action="">
-                            <label class="form-control w-full max-w-xs">
+                            <label class="form-control w-full">
                                 <div class="label">
-                                    <span class="label-text">What is your name?</span>
+                                    <span class="label-text font-bold">Passengers Name</span>
                                 </div>
-                                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                <input type="text" placeholder="Enter your name" class="input input-bordered w-full my-2" />
                             </label>
-                            <label class="form-control w-full max-w-xs">
+                            <label class="form-control w-full">
                                 <div class="label">
-                                    <span class="label-text">What is your name?</span>
+                                    <span class="label-text font-bold">Enter your phone number</span>
                                 </div>
-                                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                <input type="number" min="10000000000" max="99999999999" placeholder="Type here" class="input input-bordered w-full my-2" required/>
                             </label>
-                            <label class="form-control w-full max-w-xs">
+                            <label class="form-control w-full">
                                 <div class="label">
-                                    <span class="label-text">What is your name?</span>
+                                    <span class="label-text font-bold">Enter your email id</span>
                                 </div>
-                                <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                                <input type="email" placeholder="Type here" class="input input-bordered w-full my-2" />
                             </label>
-                            <button class="btn btn-block">block</button>
+                            <button class="btn btn-block my-4 text-white bg-[#1DD100]">Next</button>
                         </form>
                     </div>
-                    <div>
-                        <span>Terms and Conditions</span>
-                        <span>Cancellation Policy</span>
+                    <div class="opacity-6 flex justify-evenly">
+                        <a class="underline">Terms and Conditions</a>
+                        <a class="underline">Cancellation Policy</a>
                     </div>
                 </div>
             </div>
@@ -342,7 +329,40 @@
     </section>
     
        
-    </main>       
+    </main>  
+    <footer class="bg-[#030712] m-0">
+        <div class="container mx-auto p-4 text-center ">
+            <footer class="footer py-10 bg-base-200bg-[#030712] text-white flex justify-between">
+                <nav>
+                    <h2 class="text-3xl font-bold">P-Ticket</h2>
+                    <p class="text-left opacity-80">P-Ticket is a digital platform to make your <br>daily commuting better.</p>
+                    
+                </nav>
+                <nav>
+                    <h6 class="text-lg">Download our app</h6>
+                    <div class="flex border-white border-[1px] px-5 py-2 rounded-md">
+                        <a class="link link-hover"> <img src="./images/playstore.png" alt=""> </a>
+                        <div>
+                            <p>Get it on</p>
+                            <h5>Google Play</h5>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
+            <footer class="footer pxy-10 py-4 border-t text-white bg-[#030712] border-base-300">
+                <aside class="items-center grid-flow-col">
+                    <p class="opacity-80">@all rights reserved, P-Ticket services limited.2024</p>
+                </aside>
+                <nav class="md:place-self-center md:justify-self-end">
+                    <div class="grid grid-flow-col gap-4">
+                        <a>Privacy policy</a>
+                        <a>Return & refund policy</a>
+                        <a>Terms & condition</a>
+                    </div>
+                </nav>
+            </footer>
+        </div>
+    </footer>     
     
     
     <script src="./script.js"></script>

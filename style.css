@@ -31,3 +31,7 @@ a{
     border-radius: 12px;
     cursor: pointer;
 }
+th, td{
+    font-size: 16px;
+    padding: 0!important;
+}

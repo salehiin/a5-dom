@@ -145,3 +145,5 @@
 
 
 green #1DD100
+light gray #f7f8f8
+#eaebec

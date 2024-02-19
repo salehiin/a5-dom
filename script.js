@@ -137,15 +137,15 @@ const couponBtn = document.getElementById("apply-btn");
         const couponElement = document.getElementById("coupon").value;
         const couponCode = couponElement.split(" ").join("").toUppercase();
         console.log(couponCode);
-        if(total-fare.innerText > 2000){
+        if(totalFare.innerText > 2000){
             if(couponCode === "NEW15"){
         
                 const discountElement = document.getElementById("discountPrice");
-                const discountAmount =  total-fare.innerText*0.15;
+                const discountAmount =  totalFare*0.15;
                 discountElement.innerText = discountAmount.toFixed(2);
         
                 const restTotal = document.getElementById("grand-total")
-                restTotal.innerText = total-fare.innerText - discountAmount.toFixed(2); 
+                restTotal.innerText = totalFare - discountAmount.toFixed(2); 
                 document.getElementById("coupon").value="";
         
             }else{
