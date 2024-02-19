@@ -54,6 +54,11 @@ for(const seat of allSeat){
         // const sum2 = convertedGrandTotal + parseInt(seatFare)
 
         totalFare("total-fare", parseInt(seatFare));
+
+
+        
+
+
         grandTotalFare("grand-total", parseInt(seatFare));
 
         
@@ -102,6 +107,8 @@ function setInnerText(id, value){
 function grandTotalFare(category){
     const totalFare = document.getElementById("total-fare").innerText;
         const convertedTotalFare = parseInt(totalFare);
+
+        //----------------------------------------------------------------------------
         
         // if(category=="NEW15"){
         //     setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.15);
@@ -111,12 +118,44 @@ function grandTotalFare(category){
         //     setInnerText("grand-total", convertedTotalFare);
         // }
 
-        if(document.getElementById("coupon").value =="NEW15"){
-            setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.15);
-        }else if(document.getElementById("coupon").value =="Couple 20"){
-            setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.20);
-        }else{
-            setInnerText("grand-total", convertedTotalFare);
-        }
+        //----------------------------------------------------------------------------
+
+        // if(document.getElementById("coupon").value =="NEW15"){
+        //     setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.15);
+        // }else if(document.getElementById("coupon").value =="Couple 20"){
+        //     setInnerText("grand-total", convertedTotalFare - convertedTotalFare*0.20);
+        // }else{
+        //     setInnerText("grand-total", convertedTotalFare);
+        // }
+
         
 }
+
+const couponBtn = document.getElementById("apply-btn");
+        couponBtn.addEventListener("click", function(){
+        
+        const couponElement = document.getElementById("coupon").value;
+        const couponCode = couponElement.split(" ").join("").toUppercase();
+        console.log(couponCode);
+        if(total-fare.innerText > 2000){
+            if(couponCode === "NEW15"){
+        
+                const discountElement = document.getElementById("discountPrice");
+                const discountAmount =  total-fare.innerText*0.15;
+                discountElement.innerText = discountAmount.toFixed(2);
+        
+                const restTotal = document.getElementById("grand-total")
+                restTotal.innerText = total-fare.innerText - discountAmount.toFixed(2); 
+                document.getElementById("coupon").value="";
+        
+            }else{
+                alert("invalid Coupon Code");
+                document.getElementById("coupon").value="";
+            }
+        
+        }else{
+            alert("Please buy minimum 4 tickets");
+            document.getElementById("coupon").value="";
+        }
+        
+        });
