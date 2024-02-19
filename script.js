@@ -131,31 +131,31 @@ function grandTotalFare(category){
         
 }
 
-const couponBtn = document.getElementById("apply-btn");
-        couponBtn.addEventListener("click", function(){
+// const couponBtn = document.getElementById("apply-btn");
+//         couponBtn.addEventListener("click", function(){
         
-        const couponElement = document.getElementById("coupon").value;
-        const couponCode = couponElement.split(" ").join("").toUppercase();
-        console.log(couponCode);
-        if(totalFare.innerText > 2000){
-            if(couponCode === "NEW15"){
+//         const couponElement = document.getElementById("coupon").value;
+//         const couponCode = couponElement.split(" ").join("").toUppercase();
+//         console.log(couponCode);
+//         if(totalFare.innerText > 2000){
+//             if(couponCode === "NEW15"){
         
-                const discountElement = document.getElementById("discountPrice");
-                const discountAmount =  totalFare*0.15;
-                discountElement.innerText = discountAmount.toFixed(2);
+//                 const discountElement = document.getElementById("discountPrice");
+//                 const discountAmount =  totalFare*0.15;
+//                 discountElement.innerText = discountAmount.toFixed(2);
         
-                const restTotal = document.getElementById("grand-total")
-                restTotal.innerText = totalFare - discountAmount.toFixed(2); 
-                document.getElementById("coupon").value="";
+//                 const restTotal = document.getElementById("grand-total")
+//                 restTotal.innerText = totalFare - discountAmount.toFixed(2); 
+//                 document.getElementById("coupon").value="";
         
-            }else{
-                alert("invalid Coupon Code");
-                document.getElementById("coupon").value="";
-            }
+//             }else{
+//                 alert("invalid Coupon Code");
+//                 document.getElementById("coupon").value="";
+//             }
         
-        }else{
-            alert("Please buy minimum 4 tickets");
-            document.getElementById("coupon").value="";
-        }
+//         }else{
+//             alert("Please buy minimum 4 tickets");
+//             document.getElementById("coupon").value="";
+//         }
         
-        });
+//         });
