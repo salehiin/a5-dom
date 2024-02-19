@@ -104,10 +104,13 @@ function setInnerText(id, value){
 
 
 
-function grandTotalFare(category){
-    const totalFare = document.getElementById("total-fare").innerText;
+function grandTotalFare(id, value){
+    const totalFare = document.getElementById(id).innerText;
         const convertedTotalFare = parseInt(totalFare);
+        const sum = convertedTotalFare + parseInt(value);
+        setInnerText("grand-total", sum);
 
+    }
         //----------------------------------------------------------------------------
         
         // if(category=="NEW15"){
@@ -129,7 +132,7 @@ function grandTotalFare(category){
         // }
 
         
-}
+
 
 // const couponBtn = document.getElementById("apply-btn");
 //         couponBtn.addEventListener("click", function(){
